@@ -1,0 +1,43 @@
+The 3C prompting Formula:
+
+A) Context: provide background info, including role and scenario.
+
+    - Example: "You are a QA Engineer testing a banking app."
+
+B) Constraints: Set clear rules and limits
+
+C) Clarity: Be explicit about output format.
+
+Example: "I'm planning a road trip from SFO to New York in September. List only historical landmarks en route by car
+          that requires <=1 hour detour. Provide in a table with name, location, and estimated detour time. Calculate
+          total price fare for 2 adults and 1 child also include tolls, gas, and food cost. Suggest 4 star hotels
+          in between route for overnight stay."
+
+QA Analogy - Poor vs Good prompting
+
+A) Poor Prompting:
+
+   - "Find bugs in my login code."
+
+   - "Find defect in my login code and provide data."
+
+B) Good Prompting:
+
+   - "You are a QA Engineer reviewing my Python script login for security vulnerable. Focus on SQL injection
+      ,data storage from data base, cookies and session from browser. Return bulleted list of issues found
+      wit line number, severity, and Issue with description. Provide unit test cases for above scenarios
+      and narrow dow each and every detailed test cases for QA. Provide equivalence class partitioning for above
+      scenario and boundary value test data. List down area which is need to consider while testing security
+      vulnerability. Suggest tools to automate security testing."
+
+Lesson: Role Definition + Clear Constraint + Clarity = Actionable Result
+
+C) Key Takeaway: The 3C Formula
+
+    - Clear Prompts = Better, faster, Cheaper AI Output
+
+    - Use 3C Formula: Context + Constraint + Clarity
+
+    - Apply QA mindset to AI prompting. Prompt engineering is a skill - just like testing.
+
+    - Iterate prompts to refine answers.

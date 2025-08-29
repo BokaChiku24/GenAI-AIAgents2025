@@ -1,0 +1,13 @@
+Few-Shot Prompting:
+
+A) Definition: Supply the AI with a few example of the desired output or format before
+               asking your question.
+
+  Prompt Template: "You are a QA Engineer. Here are 2 examples test cases in the format I want: [Example 1], [Example 2].
+                    Now create similar test cases for this feature: [New Feature Description]"
+
+  QA Example:
+
+  Example 1: Test case for valid login (with fields, steps, expected result).
+
+  Example 2: Test case for invalid login (with fields, steps, expected result).

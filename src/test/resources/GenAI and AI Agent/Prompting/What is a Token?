@@ -1,0 +1,64 @@
+What is a Token?
+
+A) A token is a chunk of text that the LLM (Large Language Model) processes --
+   could be a word, part of a word, or even punctuation.
+
+B) Think of token like "building blocks" of the AI's understanding.
+
+C) On Average:
+
+    - 1 token ~ 4 characters in English (including spaces and punctuation)
+
+    ~ 1 Token ~ 3/4 of a word (so 100 tokens ~ 75 words)
+
+D) Example of Token Counting:
+
+    - Let's break a short prompt into tokens:
+
+    "Write test cases for login page."
+
+    - Write -> 1 token
+      Test -> 1 token
+      Cases -> 1 token
+      For -> 1 token
+      Login -> 1 token
+      Page -> 1 token
+      . -> 1 token
+
+    - Total: 7 tokens (Plus some internal encoding tokens adjustment -> ~ 8 tokens)
+
+E) Longer Prompt Example:
+
+    "You are a QA Engineer working on an e-commerce site.
+     Write test cases for valid login, invalid login, and forgot password.
+     Include at least 2 negative scenarios per feature, cover browser compatibility,
+     in table format with priority.
+
+   Approximately Tokens: ~55
+
+F) Where Token Matter:
+
+   Tokens are counted in two directions:
+
+   - Input tokens (Your prompt length)
+
+   - Output token (AI' generated output token)
+
+   - Total tokens per request = Input token + Output token
+
+G) Why Token Saving is important:
+
+    A) Cost Efficiency:
+
+       - Most paid LLM (Large Language Model) APIs like (Open AI's GPT-4, Claude, Gemini)
+         charges per 1000 tokens.
+
+       - If a vague prompt leads to multiple clarification, you pay for each token of every exchange
+
+       - Clear prompts reduce the total token count -> less cost.
+
+       - Example: 450 (Vague + Back-and-forth, tokens (Slide 12 examples))
+                  305 (Refined in one shot tokens)
+                  145 (Saving (tokens that's 1/6 cheaper for every query))
+
+

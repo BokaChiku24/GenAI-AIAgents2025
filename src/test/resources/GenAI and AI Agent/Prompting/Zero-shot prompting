@@ -1,0 +1,35 @@
+A) Zero-shot prompting: No examples, AI guess format.
+
+    - Example (Travel):
+
+    - Prompt: "How long does it take from SFO to New York?"
+
+    - Output: Flight Time, Car Travel, Walking Time, Too Much Information
+
+
+Adding Constraints for Clarity:
+
+    - Basic Constraint:
+
+    Prompt: "How long by car from SFO to New York?"
+    Output: "About 41 hours driving".
+
+    - Improved Constraint:
+
+    Prompt: "List down sightseen spots in route by car, but include only those with
+             <1 hour detour."
+
+    - Layering Constraint for Best Result:
+
+    Prompt: "List sightseeing sports en route by car, <=1 hour detour, must be historical
+             landmarks"
+
+    Output: Focused, Relevant, and Aligned with the Goal
+
+    ****************************************
+
+    Lesson: Adding constraints improves relevance and clarity.
+
+    ******************************************
+
+

@@ -1,0 +1,19 @@
+Chain-of-Thought Prompting:
+
+A) Definition: Asking the AI to reason step-by-step before providing the final answer.
+
+B) Why it works: Reveals the AI's thinking process, reduces hallucinations, and allows you to verify login.
+
+C) Travel Example:
+
+   Prompt: "Let's reason step-by-step. How long will it take to drive from SFO to New York at
+            65 mph for 8 hours/day?"
+
+   Output: (Show distance, speed calculation, days needed, final answer) -> Final Answer: ~6 Days.
+
+D) QA Example:
+
+   Prompt: "You are a QA Engineer. Let's think step by step. How would you design negative test cases
+            for a password reset feature?"
+
+   Output: (List fields, possible invalid inputs, combinations) -> Final Answer: Full test case list.

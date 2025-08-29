@@ -1,0 +1,15 @@
+Core Prompting Concepts:
+
+A) Zero-shot prompting: No examples, AI guess format.
+
+    - Example (Travel):
+
+    - Prompt: "How long does it take from SFO to New York?"
+
+    - Output: Flight Time, Car Travel, Walking Time, Too Much Information
+
+B) Few-shot prompting: Give example to guide output.
+
+C) Chain-of-thought prompting: Ask AI to think stp by step before answering.
+
+D) Iterative prompting: Refine and improve over multiple turns.

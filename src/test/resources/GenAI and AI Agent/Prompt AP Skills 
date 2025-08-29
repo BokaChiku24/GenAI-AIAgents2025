@@ -1,0 +1,15 @@
+Why Prompt Engineering Matters in QA:
+
+1) AI output depends on context, constraint, and clarity.
+
+2) Similar to writing test cases and acceptance criteria - vague one causes confusion.
+
+3) Poor prompts -> Hallucination + Wasted Time + Wasted Token.
+
+4) Poor Prompt:
+
+Zero-shot prompt example (Travel):
+
+Prompt: "How long does it take from SFO to New York?"
+
+Output: Flight Time, Car Travel, Walking Time, Too Much Information
