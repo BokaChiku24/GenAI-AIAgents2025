@@ -1,0 +1,34 @@
+LLM - Large Language Model - Security & Data Privacy
+
+AI and LLM applications are still evolving, organization are adopting different strategies to
+balance data privacy while leveraging AI's capabilities. Below are some key approaches
+companies are following:
+
+1. Hosting Enterprise LLMs on Company Server:
+
+    - Some companies deploy LLMs exclusively on their infrastructure to minimize privacy risk.
+
+    - With this setup, they often implement a no-data-retention policy, ensuring that the AI does not store
+      or use data for model training.
+
+2. Implementation API Gateways:
+
+    - Organizations use API gateways to filter and restrict what data is sent to external LLM services.
+
+    - This ensures that any sensitive information is rejected before it reach external LLM or AI services.
+
+3. Using Offline LLMs:
+
+    - Some business run LLMs on local machine on their own server, keeping all data within their control.
+
+    - This approach often come up with performance limitations but protect data privacy and it requires
+      significant resources to maintain.
+
+4. How does this relates to course?
+
+    The security of AI application (LLMs) is the responsibility of a company's Infrastructure and DevOps Security team.
+    As QA professional, our focus in this course is not on security of LLMs but on how to effective utilize them for
+    testing needs, regardless of the deployment model.
+
+    Ensuring AI security is out of scope for this course - our goal is to leverage
+    AI application for better testing efficiency and effectiveness.

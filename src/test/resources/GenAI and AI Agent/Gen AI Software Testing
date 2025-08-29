@@ -1,0 +1,28 @@
+Learn GenAI and Ai Agent for Software Testing
+
+1. Use of Generative AI for Testing:
+
+-> How to generate Test Plan, Test Data, Test Cases, UI Automation Codes (Selenium/Playwright/Cypress),
+    API Automation (Rest Assured/Postman), Framework code snippets (TestNG/Cucumber), Database queries
+
+-> How to fix code issues and be productive on your code repository using tools such as "GitHub Copilot"
+
+-> Essential GenAI Testing plugins to boost the productivity
+
+-> How to get LLM work offline
+
+2. AI Agents to drive test automation:
+
+-> Live demo of how AI agents in software testing can effortlessly perform browser browser automation with plain
+   english language.
+
+-> Integrate AI Agents into existing Automation Framework.
+
+3. AI powered Testing tools:
+
+-> Overview of the popular AI powered tools which are build in combination of (AI Agents + GenAI) to maximize the
+   productivity of Software Testing.
+
+4. Testing AI Itself (Large Language Models):
+
+-> ....
