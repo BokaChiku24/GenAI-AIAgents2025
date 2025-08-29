@@ -1,0 +1,12 @@
+Context Window Limit
+
+A) LLM (Large Language Model) have a context token limit -- maximum tokens it can keep "in memory"
+   in a conversion.
+
+B) For example: GPT-4 Turbo = 128K tokens (~100K Words)
+
+C) If your conversion thread exceeds this limit:
+
+    - The model drops older messages (forgetting earlier context)
+
+    - This can cause inconsistent answer or the need to re-send context.
