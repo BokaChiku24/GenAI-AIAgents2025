@@ -10,3 +10,5 @@ C) If your conversion thread exceeds this limit:
     - The model drops older messages (forgetting earlier context)
 
     - This can cause inconsistent answer or the need to re-send context.
+
+    -
