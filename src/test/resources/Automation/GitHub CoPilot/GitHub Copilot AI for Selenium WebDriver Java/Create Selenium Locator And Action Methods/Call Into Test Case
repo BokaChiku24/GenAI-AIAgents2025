@@ -1,0 +1,3 @@
+Line no 63, in submitOrder test file, can we call registration
+method created in RegistrationPage page object class.
+{Pass SubmitOrderTest.java (Make sure cursor is on line no 63)}

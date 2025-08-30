@@ -1,0 +1,3 @@
+Checkout how ClientAppPO.spec.js creates dataset variable from JSON parsing
+apply same to test2.js file as well
+{Pass ClientAppPO.spec.js} file
