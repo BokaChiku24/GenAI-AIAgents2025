@@ -1,0 +1,105 @@
+Test Plan
+Project Details
+
+Project Name: Style Haven – Fashion E-commerce Platform
+
+Testing Duration: 50 calendar days
+
+Testing Team: 2 Junior Testers, 1 Mid-level Tester
+
+Platforms: Windows, Mac
+
+Browsers: Chrome, Firefox, Safari
+
+Project Management Tool: Jira
+
+1. Test Objectives
+
+Verify that all functional requirements work as expected across supported OS and browsers.
+
+Ensure non-functional requirements (performance, security, scalability) meet defined standards.
+
+Provide stakeholders with clear visibility of testing progress, risk, and coverage.
+
+2. Test Strategy (High-Level Approach)
+Area	                                            Approach
+Functional Testing	                    Requirement-based, scenario-driven tests; Manual execution; Priority focus on checkout,
+                                        payment, and seller dashboard.
+Cross-Browser Testing	                Verify major workflows (login, search, add-to-cart, checkout, seller listing) on
+                                        Chrome, Firefox, Safari on both Windows and Mac.
+Regression Testing                  	Run regression cycles before each release milestone; prioritize critical flows
+                                        (login → search → add to cart → checkout → confirmation).
+Non-Functional Testing	                Basic performance validation (page load < 3s), security checks (https,
+                                        login encryption),and exploratory testing for responsiveness and scalability aspects.
+Defect Management                       Log, track, and retest defects in Jira with severity/priority tagging.
+
+3. Test Scope
+In Scope
+All listed features (user accounts, catalog, shopping cart, checkout, seller dashboard, support).
+Cross-browser verification on Windows and Mac.
+Validation of payment flows and order confirmation.
+Sanity and smoke testing of optional features (wishlists, promotions, loyalty program).
+
+Out of Scope
+Deep penetration testing (to be handled separately by security team).
+Performance load testing beyond basic validation (requires specialized tools).
+Third-party integrations (e.g., full social media API testing) unless explicitly included in user stories.
+
+4. Roles & Responsibilities
+Role	                    Name/Level	                                Responsibilities
+Test Lead	                Mid-Level Tester	             Create test cases, oversee execution, assign tasks, track progress in Jira.
+Functional Tester 1	        Junior Tester	                 Execute functional tests, log defects, retest fixes.
+Functional Tester 2	        Junior Tester	                 Perform cross-browser testing, execute regression tests, maintain test logs.
+Business Analyst	        (Stakeholder)	                 Validate test coverage vs requirements, clarify requirements quickly.
+Product Owner	            (Stakeholder)	                 Approve test scope, review defect priority, sign-off on release readiness.
+
+5. Test Deliverables
+
+Test Artifacts:
+Test Plan (this document)
+Test Scenarios & Test Cases (linked in Jira)
+Test Execution Reports (daily/weekly in Jira dashboard)
+Defect Reports (Jira)
+Final Test Summary Report (at closure)
+
+6. Test Environment
+Component	                Details
+OS	                        Windows 11, macOS Ventura
+Browsers	                Chrome (latest), Firefox (latest), Safari (latest on Mac only)
+Test Data	                Dummy user profiles, sample product inventory, mock payments (sandbox mode)
+Tools	                    Jira for tracking; Google Sheets (if needed for parallel reporting);
+                            BrowserStack/physical devices for compatibility checks
+
+7. Testing Schedule (50 Days)
+Phase	                        Duration	                            Activities
+Planning & Test Design	        Days 1–7	     Understand requirements, create test scenarios & cases, set up Jira test cycles.
+Functional Test Cycle 1	        Days 8–20	     Verify user accounts, catalog, cart, checkout, seller dashboard individually.
+Integration Testing	Days        21–30	         Test end-to-end flows (buyer → seller → order fulfillment → payment confirmation).
+Regression Cycle 1	Days        31–37	         Verify fixes and rerun critical test cases across browsers/OS.
+Non-Functional & Exploratory	Days 38–43	     Validate page speed, basic security checks, exploratory testing for UX.
+Regression Cycle 2 / Sign-off	Days 44–50	     Final regression, defect closure verification, Test Summary Report.
+
+8. Risk & Mitigation
+Risk	                                        Impact	                                    Mitigation
+Limited team size (3 testers)	                Medium	       Focus on high-priority test cases, use risk-based testing.
+Browser/OS compatibility issues	                High	       Start cross-browser testing early; use physical devices or BrowserStack.
+Requirement changes mid-cycle	                High	       Lock test scope for each sprint; handle changes in next cycle.
+Tight timeline for non-functional testing	    Low/Medium	   Prioritize basic checks only; deeper testing deferred to specialized QA later.
+
+9. Entry & Exit Criteria
+
+Entry Criteria
+Functional build available on test environment.
+Test data prepared and validated.
+Jira test cycle created.
+
+Exit Criteria
+All critical defects resolved or deferred with stakeholder approval.
+100% test case execution of high-priority cases.
+Final Test Summary Report reviewed and signed off by Product Owner.
+
+10. Reporting
+
+Daily updates in Jira: Test progress, defects raised/closed.
+Weekly summary: Coverage vs requirements, defect trends, risks/blocks.
+Final report: Execution metrics, defect density, and release readiness recommendation.

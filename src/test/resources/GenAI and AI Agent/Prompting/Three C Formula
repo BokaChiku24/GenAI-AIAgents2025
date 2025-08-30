@@ -23,8 +23,8 @@ A) Poor Prompting:
 
 B) Good Prompting:
 
-   - "You are a QA Engineer reviewing my Python script login for security vulnerable. Focus on SQL injection
-      ,data storage from data base, cookies and session from browser. Return bulleted list of issues found
+   - "You are a QA Engineer reviewing my Python script login for security vulnerable. Focus on SQL injection,
+      data storage from data base, cookies and session from browser. Return bulleted list of issues found
       wit line number, severity, and Issue with description. Provide unit test cases for above scenarios
       and narrow dow each and every detailed test cases for QA. Provide equivalence class partitioning for above
       scenario and boundary value test data. List down area which is need to consider while testing security

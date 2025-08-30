@@ -1,0 +1,19 @@
+Best Practice To Save Tokens
+
+1) Be precise from the start
+
+   - Avoid vague, open-ended prompts
+
+2) Remove unnecessary filter words.
+
+3) Summarize or restate important info
+
+   - Instead of pasting full documents repeatedly
+
+4) Use role + context + constraints
+
+   - In one compact prompt
+
+5) Chunk large tasks
+
+   - Split into smaller queries if they don't depend on the each other
