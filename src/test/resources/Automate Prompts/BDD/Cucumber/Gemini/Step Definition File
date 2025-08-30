@@ -1,0 +1,91 @@
+// File: src/test/java/stepdefinitions/ShoppingCartSteps.java
+
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+import org.openqa.selenium.WebDriver;
+import pages.ProductCatalogPage;
+import pages.ShoppingCartPage;
+import utils.WebDriverManager;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+public class ShoppingCartSteps {
+
+    private WebDriver driver;
+    private ProductCatalogPage productCatalogPage;
+    private ShoppingCartPage shoppingCartPage;
+
+    public ShoppingCartSteps() {
+        // Initializes the WebDriver and Page Objects
+        this.driver = WebDriverManager.getDriver();
+        this.productCatalogPage = new ProductCatalogPage(driver);
+        this.shoppingCartPage = new ShoppingCartPage(driver);
+    }
+
+    @Given("the user has navigated to the product catalog page")
+    public void userHasNavigatedToTheProductCatalogPage() {
+        productCatalogPage.navigateTo();
+    }
+
+    @Given("the user has added a product to the shopping cart")
+    public void userHasAddedAProductToTheShoppingCart() {
+        productCatalogPage.addProductToCart("TC_PC_E2E_007_Product");
+        shoppingCartPage.waitForCartToBeUpdated();
+        // Verifies the item was added successfully
+        assertTrue("Cart should not be empty after adding an item.", shoppingCartPage.getItemCount() > 0);
+    }
+
+    @When("the user navigates to the {string} page")
+    public void userNavigatesToThePage(String pageName) {
+        if (pageName.equals("Shopping Cart")) {
+            shoppingCartPage.navigateTo();
+        } else {
+            throw new IllegalArgumentException("Page name not recognized: " + pageName);
+        }
+    }
+
+    @When("the user removes the item from the cart")
+    public void userRemovesTheItemFromTheCart() {
+        shoppingCartPage.removeItem(0); // Removes the first item from the cart
+    }
+
+    @Then("the shopping cart should be empty")
+    public void shoppingCartShouldBeEmpty() {
+        int finalItemCount = shoppingCartPage.getItemCount();
+        assertEquals("The cart should be empty after removing the item.", 0, finalItemCount);
+    }
+
+    @Then("the total price should be zero")
+    public void totalPriceShouldBeZero() {
+        double finalTotalPrice = shoppingCartPage.getTotalPrice();
+        assertEquals("The total price should be zero.", 0.00, finalTotalPrice, 0.01); // Delta for double comparison
+    }
+
+    @Then("a confirmation message {string} should be displayed")
+    public void aConfirmationMessageShouldBeDisplayed(String expectedMessage) {
+        String actualMessage = shoppingCartPage.getConfirmationMessage();
+        assertEquals("Confirmation message is incorrect.", expectedMessage, actualMessage);
+    }
+}
+
+Explanation of the Java Code:
+@Given, @When, @Then Annotations: These annotations link the Java methods to the corresponding Gherkin steps. The Cucumber framework scans the classpath for classes with these annotations and executes the appropriate method when it encounters a matching step in the feature file.
+
+Page Object Model (POM): This example assumes the existence of ProductCatalogPage.java and ShoppingCartPage.java classes. This design pattern is crucial for creating maintainable and scalable test suites.
+
+ProductCatalogPage: Contains methods to interact with the product catalog, such as MapsTo() and addProductToCart().
+
+ShoppingCartPage: Contains methods to interact with the shopping cart, such as MapsTo(), removeItem(), getItemCount(), getTotalPrice(), and getConfirmationMessage().
+
+WebDriverManager: This is a utility class (not shown here) responsible for managing the WebDriver instance (e.g., initializing, closing, and making it available to other classes). This practice is essential for proper test setup and teardown.
+
+Assertions: The assertEquals and assertTrue methods from JUnit are used to verify the expected outcomes of the test steps.
+
+assertEquals(0, finalItemCount): Verifies that the item count is exactly zero.
+
+assertEquals(0.00, finalTotalPrice, 0.01): Verifies that the total price is zero, allowing for a small delta (0.01) to account for potential floating-point precision issues.
+
+assertTrue(shoppingCartPage.getItemCount() > 0): A preliminary check to ensure the "Given" step worked correctly before proceeding with the "When" step.

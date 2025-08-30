@@ -1,0 +1,5 @@
+AI code to POM prompt:
+
+can you modify the existing code base by giving me page object structure for this
+step defination file so that locators are pulled as methods from page object file to
+step defination method

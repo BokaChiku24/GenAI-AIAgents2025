@@ -1,7 +1,0 @@
-Given the application is open
-And the user has at least one item in the shopping cart
-When the user navigates to the shopping cart page
-And the user clicks the "Remove" or "X" icon next to an item
-Then the selected item should be successfully removed from the shopping cart
-And the cart summary should be updated
-And the total price should be recalculated
