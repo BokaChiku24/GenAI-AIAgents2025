@@ -1,0 +1,6 @@
+Below is API contract. Give me rest assured test where we can add the book and retrieve
+the same book details with assertion. Finally delete the book you added
+
+Is there any better way of handling payload than storing and using as variable
+
+Give me equivalent python code

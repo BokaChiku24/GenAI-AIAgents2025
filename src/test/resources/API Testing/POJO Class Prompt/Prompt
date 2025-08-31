@@ -1,0 +1,6 @@
+Below is my JSON. Can you prepare POJO classes for them
+{Provide JSON/Schema}
+
+Write logic to sum all the course prices and assert that sum should be less than 1000.
+Use POJO methods to get the data
+

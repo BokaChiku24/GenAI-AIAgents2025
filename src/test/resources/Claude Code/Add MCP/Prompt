@@ -1,0 +1,20 @@
+Can you go through link which has mcp configuration for selenium
+https://github.com/angiejones/mcp-selenium use that configuration
+and add it to the claude code here so that we can use that mcp
+
+
+claude mcp add selenium npx -y @angiejones/mcp-selenium
+
+
+Perform below steps manually first on browser to understand flow and grab real locators, and then frame a selenium test as per existing framework
+pageobject standards. create that test file in rahulshettyacademy.tests package path
+
+navigate to https://rahulshettyacademy.com/loginpagePractise/
+enter username as
+"rahulshettyacademy" and password
+as
+"learning"
+select checkbox
+Click on Sign In button wait until page is navigated to
+https://rahulshettyacademy.com/angularpractite/shop page
+verify if iphone X product is present on the page.

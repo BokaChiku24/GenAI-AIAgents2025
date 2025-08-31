@@ -1,0 +1,4 @@
+Write a code to compare 2 JSON in Javascript. JSONs are nested arrays
+
+In the above example shared, property a value is dynamic. can you rewrite the code by ignoring this dynamic property
+"a"

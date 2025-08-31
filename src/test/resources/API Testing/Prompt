@@ -1,0 +1,7 @@
+Below is the schema. generate test cases to test this JSON response
+{provide schema}
+
+below is json. write the logic to sum all the course prices and assert that sum should be less than 1000
+{provide json/schema}
+
+use JsonPath class

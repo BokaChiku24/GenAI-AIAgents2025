@@ -1,0 +1,8 @@
+Generate logic in cypress JS
+
+Give me Cypress JS test where we can add the book and retrieve the same book details assertion.
+Finally delete the book you added.Below is contract
+
+Is there any better way of handling payload than storing and using variable.
+
+okay can you generate this using cypress custom command

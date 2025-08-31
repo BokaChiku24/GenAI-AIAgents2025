@@ -1,0 +1,10 @@
+Blow are tables in MySQL database. Can you analyze it.
+{provide database tables}
+
+Give me query on "Which city has generated the highest total sales amount?" from above tables
+
+Write a query for Top selling product categories
+
+Rewrite this query in SQL Server
+
+1000 email and name combinations which are unique
